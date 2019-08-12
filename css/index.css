@@ -150,7 +150,7 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* My CSS Starts Here */
 body {
   line-height: 1.3;
   font-size: 18px;
@@ -162,10 +162,26 @@ footer {
   padding: 60px 80px;
 }
 
+@media (max-width: 800px) {
+  header,
+  main,
+  footer {
+    padding: 20px 40px;
+  }
+}
+
 nav {
   display: flex;
   width: 70%;
   justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 
 nav a {
@@ -180,21 +196,55 @@ header .nav {
   align-items: center;
 }
 
+@media (max-width: 800px) {
+  header .nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .first-image {
+    display: none;
+  }
+}
+
 .top-headline h1 {
   font-size: 105px;
   line-height: 1;
 }
 
-.top-headline {
-  display: flex;
-  align-items: center;
-}
+@media (max-width: 800px) {
+  .headline-button h1 {
+    font-size: 70px;
+  }
 
-.top-headline .headline-button {
-  text-align: center;
-  margin: 0px 130px;
-}
+  .top-headline {
+    display: flex;
+    align-items: center;
+  }
 
+  @media (max-width: 800px) {
+    .top-headline {
+      align-items: center;
+    }
+  }
+
+  .top-headline .headline-button {
+    text-align: center;
+    margin: 0px 130px;
+  }
+
+  @media (max-width: 800px) {
+    .top-headline .headline-button {
+      text-align: center;
+      margin: 0px 130px;
+      justify-content: center;
+    }
+  }
+}
 .top-headline button {
   font-size: 18px;
   border: 2px solid black;
