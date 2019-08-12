@@ -156,6 +156,7 @@ body {
   font-size: 18px;
 }
 
+/* media query for overall font size on tab and mobile */
 @media (max-width: 800px) {
   body {
     line-height: 1.3;
@@ -176,11 +177,11 @@ footer {
   padding: 60px 80px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   header,
   main,
   footer {
-    padding: 20px 40px;
+    padding: 20px 80px;
   }
 }
 
@@ -190,6 +191,7 @@ nav {
   justify-content: space-between;
 }
 
+/* media query for nav display on tab and mobile */
 @media (max-width: 800px) {
   nav {
     display: flex;
@@ -210,6 +212,8 @@ nav a {
   text-decoration: none;
 }
 
+/* media query navigation links on mobile */
+
 @media (max-width: 500px) {
   nav a {
     color: #b5afaf;
@@ -220,6 +224,9 @@ nav a {
     padding: 15px;
     font-size: 18px;
   }
+  nav a:last-child {
+    border-bottom: 1px solid gray;
+  }
 }
 
 header .nav {
@@ -227,6 +234,8 @@ header .nav {
   justify-content: space-evenly;
   align-items: center;
 }
+
+/* media query for header navigation bar on tab */
 
 @media (max-width: 800px) {
   header .nav {
@@ -236,6 +245,8 @@ header .nav {
     align-items: center;
   }
 }
+
+/* using media query to hide top image */
 
 @media (max-width: 800px) {
   .first-image {
@@ -309,10 +320,12 @@ header .nav {
 
 @media (max-width: 500px) {
   .about,
-  .services,
   .product,
   .vision {
     padding-top: 40px;
+  }
+  .services {
+    margin-top: -20px;
   }
 }
 
@@ -349,8 +362,8 @@ header .nav {
 
 @media (max-width: 500px) {
   .contact-us {
-    padding: 40px 0;
     font-size: 16px;
+    padding: 0px;
   }
 }
 
@@ -365,18 +378,24 @@ header .nav {
   }
 }
 
-@media (max-width: 500px) {
-  .contact-us address {
-    font-size: 16px;
-  }
-}
-
 .contact-us a {
   text-decoration: none;
   padding: 10px 0;
   display: block;
   color: inherit;
   font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .contact-us a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-us a {
+    font-size: 16px;
+  }
 }
 
 footer {
@@ -388,6 +407,13 @@ footer {
   footer {
     text-align: center;
     padding-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    text-align: center;
     font-size: 16px;
   }
 }
