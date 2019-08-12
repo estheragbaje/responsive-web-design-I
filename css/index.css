@@ -163,6 +163,13 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  body {
+    line-height: 1.3;
+    font-size: 16px;
+  }
+}
+
 header,
 main,
 footer {
@@ -191,10 +198,28 @@ nav {
   }
 }
 
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+
 nav a {
   color: #b5afaf;
   text-decoration: none;
-  /* margin-right: 80px; */
+}
+
+@media (max-width: 500px) {
+  nav a {
+    color: #b5afaf;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid gray;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+  }
 }
 
 header .nav {
@@ -282,6 +307,21 @@ header .nav {
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .about,
+  .services,
+  .product,
+  .vision {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .features-about {
+    display: block;
+  }
+}
+
 .middle-img {
   width: 100%;
 }
@@ -291,6 +331,13 @@ header .nav {
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .further-descriptions {
+    padding: 40px 0;
+    display: block;
+  }
+}
+
 .further-descriptions .spacer {
   width: 20px;
   flex-shrink: 0;
@@ -298,6 +345,13 @@ header .nav {
 
 .contact-us {
   padding: 40px 0;
+}
+
+@media (max-width: 500px) {
+  .contact-us {
+    padding: 40px 0;
+    font-size: 16px;
+  }
 }
 
 .contact-us address {
@@ -310,6 +364,13 @@ header .nav {
     font-size: 16px;
   }
 }
+
+@media (max-width: 500px) {
+  .contact-us address {
+    font-size: 16px;
+  }
+}
+
 .contact-us a {
   text-decoration: none;
   padding: 10px 0;
@@ -329,6 +390,13 @@ footer {
     padding-bottom: 20px;
     font-size: 16px;
   }
+}
+
+hr {
+  display: block;
+  background-color: #000;
+  width: 100%;
+  height: 3px;
 }
 
 /* .services-header-img {
@@ -387,10 +455,3 @@ footer {
   border: 1px solid black;
   margin-top: 40px;
 } */
-
-hr {
-  display: block;
-  background-color: #000;
-  width: 100%;
-  height: 3px;
-}
